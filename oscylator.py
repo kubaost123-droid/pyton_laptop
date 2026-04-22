@@ -1,6 +1,8 @@
 from dataclasses import dataclass,field
 from typing import Any
 from main import *
+import matplotlib.pyplot as plt
+import numpy as np
 
 @dataclass
 class OscillatorConfig:

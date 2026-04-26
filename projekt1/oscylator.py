@@ -106,7 +106,7 @@ class Rysowanie(Visualizer):
         
         plt.tight_layout(h_pad=3.0, w_pad=3.0)
 
-        plt.savefig('wykresy.png', dpi=300, bbox_inches='tight')
+        plt.savefig('projekt1/wykresy.png', dpi=300, bbox_inches='tight')
         plt.show()
 
 class AnalizerFinalnychStatystyk(FinalAnalyzer):
@@ -119,9 +119,9 @@ class AnalizerFinalnychStatystyk(FinalAnalyzer):
         max_E_k = max(lista_E_k)
         max_E_p = max(lista_E_p)
         print('##########################')
-        print(f'Maksymalna predkosc: {max_v}')
-        print(f'Maksymalna energia kinetyczna: {max_E_k}')
-        print(f'Maksymalna energia potencjalna: {max_E_p}')
+        print(f'Maksymalna predkosc: {max_v} m/s')
+        print(f'Maksymalna energia kinetyczna: {max_E_k} J')
+        print(f'Maksymalna energia potencjalna: {max_E_p} J')
         print('##########################')
         return FinalOscillatorStatistics(max_v,max_E_k,max_E_p)
 
